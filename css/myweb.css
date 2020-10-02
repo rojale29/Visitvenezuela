@@ -1,0 +1,148 @@
+/* This is the CSS file for the Visit Venezuela website */
+/* By Rachel Levy-Macadar - London, 1 October, 2020     */
+/********************************************************/
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row1 { 
+  display: flex;
+  flex-wrap: wrap;
+  width:50%;
+  margin-left: 30%;
+}
+
+.row2 { 
+  display: flex;
+  flex-wrap: wrap;
+  width:50%;
+  margin-left: 30%;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.side1 {
+  flex: 50%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.main1 {   
+  flex: 50%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.fakeimg1 {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  height:200px;
+}
+
+.fakeimg2 {
+  background-color: #e1e1e1;
+  width: 100%;
+  padding: 20px;
+  height:30px;
+}
+
+.sendbut {
+
+  background-color: skyblue;
+  padding: 10px;
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: rgb(56, 104, 150); /* Grey background */
+  color:rgb(156, 188, 143);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
